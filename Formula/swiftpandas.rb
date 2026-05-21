@@ -10,16 +10,14 @@ class Swiftpandas < Formula
   homepage "https://github.com/kiraa-ai/kiraa-swift-pandas"
   license "Apache-2.0"
 
-  url     "https://github.com/kiraa-ai/kiraa-swift-pandas/releases/download/v0.6.0-beta/swiftpandas-v0.6.0-beta-macos26-universal.zip"
-  sha256  "41f34a52e2aab2d8901d48900121ed3271611d13710a7b5090219912293e561f"
-  version "0.6.0-beta"
+  url     "https://github.com/kiraa-ai/kiraa-swift-pandas/releases/download/v0.6.1-beta/swiftpandas-v0.6.1-beta-macos26-universal.zip"
+  sha256  "4994a5af26174bed8b47e83c83feb5ff00cb84a4cf83e0d9893b2c47e5906409"
+  version "0.6.1-beta"
+
+  head "https://github.com/kiraa-ai/kiraa-swift-pandas.git", branch: "main"
 
   depends_on macos: :ventura
-
-  head do
-    url "https://github.com/kiraa-ai/kiraa-swift-pandas.git", branch: "main"
-    depends_on xcode: ["15.0", :build]
-  end
+  depends_on xcode: ["15.0", :build] => :head
 
   def install
     if build.head?
