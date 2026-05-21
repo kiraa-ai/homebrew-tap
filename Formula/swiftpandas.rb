@@ -10,10 +10,9 @@ class Swiftpandas < Formula
   homepage "https://github.com/kiraa-ai/kiraa-swift-pandas"
   license "Apache-2.0"
 
-  url     "https://github.com/kiraa-ai/kiraa-swift-pandas/releases/download/v0.6.1-beta/swiftpandas-v0.6.1-beta-macos26-universal.zip"
-  sha256  "4994a5af26174bed8b47e83c83feb5ff00cb84a4cf83e0d9893b2c47e5906409"
-  version "0.6.1-beta"
-
+  url     "https://github.com/kiraa-ai/kiraa-swift-pandas/releases/download/v0.6.2-beta/swiftpandas-v0.6.2-beta-macos26-universal.zip"
+  sha256  "f18055617e77c9aa564e3989865fada57d3bd9c660fedafa4011f8b089425822"
+  version "0.6.2-beta"
 
   depends_on macos: :ventura
 
